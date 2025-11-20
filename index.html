@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title> Admin Dashboard</title>
+    <script src="https://kit.fontawesome.com/c65601677c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+
+        <!--navigation menu-->
+        <div id="navigation">
+            <ul>
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </span>
+                        <span id="title">Dababy Logs</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span id="title">Dashbord</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </span>
+                        <span id="title">Customer</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-comment"></i>
+                        </span>
+                        <span id="title">Messages</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <span id="title">Help</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <span id="title">Settings</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <span id="title">Password</span>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                        <span id="icon">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                        <span id="title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--========MAIN DIVISION===========-->
+        <div id="main">
+            <div id="topbar">
+                <div id="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div id="search">
+                    <label for="search-icon">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+
+                <div id="user">
+                    <img src="../images/people/1.png">
+                </div>
+
+
+            </div>
+            <!--=======CARDS===========-->
+            <div id="cardbox">
+                <div id="card">
+                    <div id="card-details">
+                        <div id="numbers">1,504</div>
+                        <div id="cardname">Daily Views</div>
+                    </div>
+                    <div id="iconbox"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <div id="card">   
+                    <div id="card-details">
+                        <div id="numbers">80</div>
+                        <div id="cardname">Sale</div>
+                    </div>
+                    <div id="iconbox"><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div id="card">
+                    <div id="card-details">
+                        <div id="numbers">124</div>
+                        <div id="cardname">Comments</div>
+                    </div>
+                    <div id="iconbox"><i class="fa-solid fa-comment"></i></div>
+                </div>
+                <div id="card">    
+                    <div id="card-details">
+                        <div id="numbers">&#8358;5,000,000</div>
+                        <div id="cardname">Earnings</div>
+                    </div>
+                    <div id="iconbox"><i class="fa-solid fa-money-bills"></i></div>
+                </div>
+            </div>
+
+            <!-----=======ORDER DETAIL LIST=======-->
+            <div id="details">
+                <div id="recentorders">
+                    <div id="cardhead">
+                        <h2>Recent Orders</h2>
+                        <a href="#" id="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refridgerator</td>
+                                <td>&#8358;500,000</td>
+                                <td>Paid</td>
+                                <td><span id="status-delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Dell Laptop</td>
+                                <td>&#8358;120,000</td>
+                                <td>Due</td>
+                                <td><span id="pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hisense Tv</td>
+                                <td>&#8358;1,000,000</td>
+                                <td>Paid</td>
+                                <td><span id="return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Air condition</td>
+                                <td>&#8358;488,635</td>
+                                <td>Paid</td>
+                                <td><span id="in-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Standing Fan</td>
+                                <td>&#8358;75,500</td>
+                                <td>Paid</td>
+                                <td><span id="return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Led Lights</td>
+                                <td>&#8358;745,300</td>
+                                <td>Paid</td>
+                                <td><span id="in-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Iphone 17 Pro Max</td>
+                                <td>&#8358;2,350,00</td>
+                                <td>Due</td>
+                                <td><span id="pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Wall Clock</td>
+                                <td>&#8358;500,000</td>
+                                <td>Paid</td>
+                                <td><span id="status-delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="recent-customers">
+                    <div id="cardhead">
+                        <h2>Recent Customer</h2>
+                    </div>
+                    <table> 
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60">
+                                <div id="imagebox"><img src="../images/people/3.png"></div>
+                            </td>
+                            <td>
+                                <h4>David <br><span>Italy</span> </h4>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                
+                </div>            
+            </div>
+
+        
+        </div>  
+</body>
+</html>
